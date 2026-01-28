@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.prose-article {
+  @apply prose prose-lg max-w-none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.prose-article h1 {
+  @apply text-4xl font-bold mb-6 text-gray-900;
+}
+
+.prose-article h2 {
+  @apply text-2xl font-semibold mt-8 mb-4 text-gray-800;
+}
+
+.prose-article p {
+  @apply text-justify leading-relaxed mb-4 text-gray-700;
+}
+
+.prose-article blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic my-6 text-gray-600;
+}
+
+.prose-article ul {
+  @apply list-disc pl-6 mb-4;
+}
+
+.prose-article li {
+  @apply mb-2;
+}
+
+.prose-article a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
