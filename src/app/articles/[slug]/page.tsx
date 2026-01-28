@@ -1,11 +1,9 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import { useParams } from 'next/navigation'
-import { motion } from 'framer-motion'
+import { readFile } from 'fs/promises'
+import { join } from 'path'
 import Link from 'next/link'
+import ArticleContent from './ArticleContent'
 
-// Article mapping (same as in articles page)
+// Article mapping
 const articleMap: Record<string, { title: string; fileName: string }> = {
   'califrais': { title: 'Califrais', fileName: 'Califrais_(French_Version).html' },
   'chatgpt-hro': { title: 'ChatGPT HRO', fileName: 'Chatgpt_HRO(French_Version).html' },
@@ -19,30 +17,16 @@ const articleMap: Record<string, { title: string; fileName: string }> = {
   'tech-across-years': { title: 'Tech Across Years', fileName: 'Tech_accross_years.html' },
 }
 
-export default function ArticlePage() {
-  const params = useParams()
-  const slug = params.slug as string
-  const [articleContent, setArticleContent] = useState<string>('')
-  const [loading, setLoading] = useState(true)
+// Generate static params for all article slugs
+export function generateStaticParams() {
+  return Object.keys(articleMap).map((slug) => ({
+    slug,
+  }))
+}
 
-  const article = articleMap[slug]
-
-  useEffect(() => {
-    if (article) {
-      fetch(`/articles/${article.fileName}`)
-        .then(res => res.text())
-        .then(html => {
-          setArticleContent(html)
-          setLoading(false)
-        })
-        .catch(err => {
-          console.error('Error loading article:', err)
-          setLoading(false)
-        })
-    } else {
-      setLoading(false)
-    }
-  }, [article])
+// Server component that reads article content
+export default async function ArticlePage({ params }: { params: { slug: string } }) {
+  const article = articleMap[params.slug]
 
   if (!article) {
     return (
@@ -57,35 +41,26 @@ export default function ArticlePage() {
     )
   }
 
+  // Read article content from public folder during build
+  let articleContent = ''
+  try {
+    const filePath = join(process.cwd(), 'public', 'articles', article.fileName)
+    articleContent = await readFile(filePath, 'utf-8')
+  } catch (error) {
+    console.error('Error reading article:', error)
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="container mx-auto px-4 py-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+        <Link
+          href="/articles"
+          className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6"
         >
-          <Link
-            href="/articles"
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6"
-          >
-            ← Back to Articles
-          </Link>
+          ← Back to Articles
+        </Link>
 
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
-            {loading ? (
-              <div className="text-center py-12">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-                <p className="text-gray-600 mt-4">Loading article...</p>
-              </div>
-            ) : (
-              <div
-                className="prose-article"
-                dangerouslySetInnerHTML={{ __html: articleContent }}
-              />
-            )}
-          </div>
-        </motion.div>
+        <ArticleContent content={articleContent} />
       </div>
     </div>
   )
