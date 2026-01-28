@@ -25,7 +25,7 @@ export default function Home() {
               Welcome to TheLab Blog, where we publish insightful articles and interviews about firms in emergency crisis management, disaster management and prevention, healthcare, and environment sectors, particularly those leveraging artificial intelligence.
             </p>
             <p>
-              Our mission is to highlight innovative organizations working at the intersection of technology and social good, showcasing how data science and AI can be applied to some of the world's most pressing challenges.
+              Our mission is to highlight innovative organizations working at the intersection of technology and social good, showcasing how data science and AI can be applied to some of the world&apos;s most pressing challenges.
             </p>
             <p>
               From disaster preparedness to healthcare innovation, from environmental sustainability to emergency response, we explore the cutting-edge solutions that are making a difference.
