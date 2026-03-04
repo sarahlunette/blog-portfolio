@@ -6,7 +6,10 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 const navItems = [
   { name: 'Home', href: '/' },
+  { name: 'The Lab AI', href: '/lab-ai' },
+  { name: 'The Lab Data', href: '/lab-data' },
   { name: 'Articles', href: '/articles' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Navigation() {

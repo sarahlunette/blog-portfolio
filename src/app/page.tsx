@@ -22,13 +22,13 @@ export default function Home() {
           </p>
           <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
             <p>
-              Welcome to TheLab Blog, where we publish insightful articles and interviews about firms in emergency crisis management, disaster management and prevention, healthcare, and environment sectors, particularly those leveraging artificial intelligence.
+              Welcome to TheLab, where we transform disaster recovery and crisis management through AI-powered solutions and data-driven intelligence. We publish insightful articles and provide cutting-edge services in emergency response, disaster resilience, and innovative technology applications.
             </p>
             <p>
-              Our mission is to highlight innovative organizations working at the intersection of technology and social good, showcasing how data science and AI can be applied to some of the world&apos;s most pressing challenges.
+              Our mission is to bridge the critical gap between emergency response and sustainable reconstruction, empowering entrepreneurs, governments, and organizations with the tools to make better decisions faster in high-stakes environments.
             </p>
             <p>
-              From disaster preparedness to healthcare innovation, from environmental sustainability to emergency response, we explore the cutting-edge solutions that are making a difference.
+              Through <strong>The Lab AI</strong> and <strong>The Lab Data</strong>, we offer comprehensive solutions combining artificial intelligence, multi-source data integration, and geospatial analytics to address some of the world&apos;s most pressing challenges in disaster resilience and crisis management.
             </p>
           </div>
         </motion.div>
@@ -44,6 +44,18 @@ export default function Home() {
         >
           {[
             {
+              title: 'The Lab AI',
+              description: 'AI-powered solutions for entrepreneurs',
+              color: 'from-purple-500 to-purple-600',
+              href: '/lab-ai'
+            },
+            {
+              title: 'The Lab Data',
+              description: 'Data integration & analytics services',
+              color: 'from-blue-500 to-blue-600',
+              href: '/lab-data'
+            },
+            {
               title: 'Crisis Management',
               description: 'Emergency response & disaster preparedness',
               color: 'from-red-500 to-red-600'
@@ -51,7 +63,7 @@ export default function Home() {
             {
               title: 'Healthcare AI',
               description: 'Innovation in medical technology',
-              color: 'from-blue-500 to-blue-600'
+              color: 'from-teal-500 to-teal-600'
             },
             {
               title: 'Environment',
@@ -61,7 +73,7 @@ export default function Home() {
             {
               title: 'Browse Articles',
               description: 'Read our latest insights',
-              color: 'from-purple-500 to-purple-600',
+              color: 'from-orange-500 to-orange-600',
               href: '/articles'
             },
           ].map((item, index) => (

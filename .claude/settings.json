@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/sarah/Desktop/sarah_le_net/**)",
+      "Read(//c/Users/sarah/Desktop/sarah_le_net/portfolio_react/**)"
+    ]
+  }
+}
