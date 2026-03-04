@@ -67,7 +67,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-gray-600">
-              Have a question about The Lab AI or The Lab Data? Let's talk!
+              Have a question about The Lab AI or The Lab Data? Let&apos;s talk!
             </p>
           </div>
 
@@ -159,7 +159,7 @@ export default function Contact() {
                       <p className="font-semibold">Message sent successfully!</p>
                     </div>
                     <p className="text-sm text-green-600 mt-1">
-                      We'll get back to you as soon as possible.
+                      We&apos;ll get back to you as soon as possible.
                     </p>
                   </div>
                 )}
