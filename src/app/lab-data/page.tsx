@@ -6,9 +6,39 @@ import { FaDatabase, FaSatellite, FaMapMarkedAlt, FaChartBar, FaCloudDownloadAlt
 
 export default function LabData() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="fixed inset-0 bg-gradient-to-br from-blue-900 via-teal-900 to-green-900 -z-10">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImRvdHMiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNkb3RzKSIvPjwvc3ZnPg==')] opacity-30"></div>
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{
+            duration: 9,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-1/3 -left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.3, 0.6, 0.3],
+          }}
+          transition={{
+            duration: 11,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+          className="absolute bottom-1/3 -right-1/4 w-96 h-96 bg-green-500 rounded-full blur-3xl"
+        />
+      </div>
+
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-20 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,15 +46,15 @@ export default function LabData() {
           className="text-center"
         >
           <div className="inline-block mb-4">
-            <FaDatabase className="text-6xl text-blue-600 mx-auto" />
+            <FaDatabase className="text-6xl text-blue-300 mx-auto" />
           </div>
-          <h1 className="text-6xl font-bold text-gray-900 mb-4">
+          <h1 className="text-6xl font-bold text-white mb-4">
             The Lab Data
           </h1>
-          <p className="text-2xl text-gray-600 mb-8">
+          <p className="text-2xl text-blue-200 mb-8">
             Transforming Raw Data into Actionable Intelligence
           </p>
-          <div className="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
+          <div className="max-w-4xl mx-auto text-lg text-gray-200 leading-relaxed space-y-6">
             <p>
               The Lab Data specializes in multi-source data integration, geospatial intelligence, and real-time analytics for disaster management, crisis response, and resilience planning.
             </p>
@@ -36,13 +66,13 @@ export default function LabData() {
       </section>
 
       {/* Data Services */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-16 relative">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-4xl font-bold text-center text-white mb-12">
             Comprehensive Data Solutions
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -216,7 +246,7 @@ export default function LabData() {
       </section>
 
       {/* Use Cases */}
-      <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-16">
+      <section className="py-16 relative">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
@@ -224,7 +254,7 @@ export default function LabData() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+            <h2 className="text-4xl font-bold text-center text-white mb-12">
               Data-Driven Impact
             </h2>
             <div className="max-w-4xl mx-auto space-y-6">
