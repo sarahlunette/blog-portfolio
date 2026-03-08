@@ -11,8 +11,6 @@ import {
   FaCheckCircle,
   FaMapMarkedAlt,
   FaDatabase,
-  FaClock,
-  FaDollarSign,
   FaUsers,
   FaCloudDownloadAlt
 } from 'react-icons/fa'

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaLinkedin, FaGithub, FaEnvelope, FaMapMarkerAlt, FaCalendarAlt, FaGlobe, FaShieldAlt, FaRocket, FaUsers, FaLightbulb } from 'react-icons/fa'
+import { FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaCalendarAlt, FaGlobe, FaShieldAlt, FaRocket, FaUsers, FaLightbulb } from 'react-icons/fa'
 
 export default function About() {
   return (
@@ -162,7 +162,7 @@ export default function About() {
                       As a solo founder, Sarah combines technical expertise with real-world crisis response experience to create tools that empower decision-makers in high-pressure environments. She is committed to building GDPR-compliant, ethically-designed AI systems that prioritize transparency, auditability, and genuine impact for vulnerable communities.
                     </p>
                     <p>
-                      TheLab is actively developing the next generation of crisis response technology, including edge computing devices for offline damage assessment in degraded infrastructure environments—ensuring resilience tools work when they're needed most.
+                      TheLab is actively developing the next generation of crisis response technology, including edge computing devices for offline damage assessment in degraded infrastructure environments—ensuring resilience tools work when they&apos;re needed most.
                     </p>
                   </div>
 
