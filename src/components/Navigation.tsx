@@ -6,6 +6,8 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 const navItems = [
   { name: 'Home', href: '/' },
+  { name: 'ResilienceAI', href: '/resilience-ai' },
+  { name: 'About', href: '/about' },
   { name: 'The Lab AI', href: '/lab-ai' },
   { name: 'The Lab Data', href: '/lab-data' },
   { name: 'Articles', href: '/articles' },
@@ -19,8 +21,8 @@ export default function Navigation() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="text-2xl font-bold text-gray-900">
-            TheLab Blog
+          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            TheLab
           </Link>
 
           {/* Mobile menu button */}
