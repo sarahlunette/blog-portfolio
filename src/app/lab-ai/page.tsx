@@ -56,7 +56,7 @@ export default function LabAI() {
           </p>
           <div className="max-w-4xl mx-auto text-lg text-gray-200 leading-relaxed space-y-6">
             <p>
-              The Lab AI is your innovation partner for building intelligent, data-driven solutions that transform how businesses operate in crisis management, disaster recovery, and resilience planning.
+              The Lab AI is your innovation partner for building intelligent, data-driven solutions that transform how businesses operate in disaster relief, disaster recovery, and resilience planning.
             </p>
             <p>
               We leverage cutting-edge AI and machine learning technologies to help entrepreneurs and organizations make better decisions faster, optimize resources, and build sustainable solutions for complex challenges.
@@ -246,7 +246,7 @@ export default function LabAI() {
               Ready to Build the Future with AI?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Join us in transforming disaster resilience and crisis management through cutting-edge artificial intelligence solutions.
+              Join us in transforming disaster resilience and disaster relief through cutting-edge artificial intelligence solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

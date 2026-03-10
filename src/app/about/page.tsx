@@ -23,7 +23,7 @@ export default function About() {
           </p>
           <div className="bg-white p-8 rounded-2xl shadow-lg text-left space-y-4">
             <p className="text-lg text-gray-700 leading-relaxed">
-              TheLab is an AI-powered crisis management and disaster recovery platform designed for small islands, coastal territories, and fragile states. Founded in 2024, we combine real-time data streaming, satellite damage assessment, geospatial intelligence, and multi-LLM agentic reasoning to provide actionable insights for disaster response and long-term resilience planning.
+              TheLab is an AI-powered disaster relief and disaster recovery platform designed for at-risk territories. Founded in 2024, we combine real-time data streaming, satellite damage assessment, geospatial intelligence, and multi-LLM agentic reasoning to provide actionable insights for disaster response and long-term resilience planning.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Our flagship product, <strong>ResilienceAI</strong>, transforms how governments, NGOs, and private organizations respond to natural disasters by reducing recovery time by 30-50% and cutting costs by 20-40% through AI-powered decision support and optimized resource allocation.
@@ -156,7 +156,7 @@ export default function About() {
                   <h4 className="text-2xl font-bold text-gray-900 mb-4">About Sarah</h4>
                   <div className="space-y-4 text-gray-700">
                     <p>
-                      Sarah LE NET is the founder and CEO of TheLab, bringing together expertise in crisis management, artificial intelligence, and disaster resilience planning. With a deep understanding of the unique challenges faced by small island states and fragile territories, Sarah founded TheLab in 2024 to address the critical gap in accessible, affordable, and effective disaster recovery solutions.
+                      Sarah LE NET is the founder and CEO of TheLab, bringing together expertise in disaster relief, artificial intelligence, and disaster resilience planning. With a deep understanding of the unique challenges faced by small island states and fragile territories, Sarah founded TheLab in 2024 to address the critical gap in accessible, affordable, and effective disaster recovery solutions.
                     </p>
                     <p>
                       As a solo founder, Sarah combines technical expertise with real-world crisis response experience to create tools that empower decision-makers in high-pressure environments. She is committed to building GDPR-compliant, ethically-designed AI systems that prioritize transparency, auditability, and genuine impact for vulnerable communities.
@@ -171,7 +171,7 @@ export default function About() {
                     <div className="flex flex-wrap gap-2">
                       {[
                         'AI & Machine Learning',
-                        'Crisis Management',
+                        'disaster relief',
                         'Disaster Recovery',
                         'Geospatial Intelligence',
                         'Data Integration',
@@ -230,7 +230,7 @@ export default function About() {
             {[
               {
                 title: 'Territory-Specific',
-                description: 'Not generic solutions—we understand the unique challenges of small islands and fragile states with limited resources and infrastructure.',
+                description: 'Not generic solutions—we understand the unique challenges of at-risk territories with limited resources and infrastructure.',
                 icon: '🏝️'
               },
               {

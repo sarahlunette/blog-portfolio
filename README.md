@@ -1,10 +1,10 @@
 # TheLab - ResilienceAI Platform
 
-The official website for TheLab, showcasing ResilienceAI - an AI-powered crisis management and disaster recovery platform designed for small islands, coastal territories, and fragile states. Built with Next.js, React, TypeScript, and Tailwind CSS.
+The official website for TheLab, showcasing ResilienceAI - an AI-powered disaster relief and disaster recovery platform designed for at-risk territories. Built with Next.js, React, TypeScript, and Tailwind CSS.
 
 ## About TheLab
 
-TheLab is an AI-powered crisis management and disaster recovery platform founded in 2024. Our flagship product, **ResilienceAI**, combines:
+TheLab is an AI-powered disaster relief and disaster recovery platform founded in 2024. Our flagship product, **ResilienceAI**, combines:
 
 - Real-time data streaming
 - Satellite damage assessment (Sentinel-2)
@@ -21,7 +21,7 @@ TheLab is an AI-powered crisis management and disaster recovery platform founded
 - **ResilienceAI Product Page**: Comprehensive showcase of our flagship platform
 - **About Page**: Company information, mission, team, and differentiators
 - **Service Pages**: The Lab AI and The Lab Data offerings
-- **Articles/Blog**: Crisis management insights and case studies
+- **Articles/Blog**: disaster relief insights and case studies
 - **Contact Form**: Business inquiries and demo requests
 - **Modern Design**: Clean, professional interface with smooth animations
 - **Responsive**: Fully responsive design that works on all devices
@@ -268,7 +268,7 @@ TheLab offers three deployment options:
 2. **On-Premise License**: Deploy within your own infrastructure (most popular)
 3. **Custom Development**: Tailored solutions with white-label options
 
-Target customers: Governments, NGOs, municipalities, international organizations in small islands, coastal territories, and fragile states.
+Target customers: Governments, NGOs, municipalities, international organizations in at-risk territories.
 
 ## Contact
 

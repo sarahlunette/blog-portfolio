@@ -15,7 +15,7 @@ export default function Home() {
           className="text-center"
         >
           <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-semibold text-sm mb-4">
-            AI-Powered Crisis Management Platform
+            AI-Powered disaster relief Platform
           </div>
           <h1 className="text-6xl font-bold text-gray-900 mb-4">
             TheLab
@@ -25,7 +25,7 @@ export default function Home() {
           </p>
           <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
             <p className="text-xl">
-              <strong>ResilienceAI</strong> is the world&apos;s first AI platform designed specifically for small islands, coastal territories, and fragile states. Reduce recovery time by <strong className="text-blue-600">30-50%</strong> and costs by <strong className="text-blue-600">20-40%</strong> through intelligent crisis management.
+              <strong>ResilienceAI</strong> is the world&apos;s first AI platform designed specifically for at-risk territories. Reduce recovery time by <strong className="text-blue-600">30-50%</strong> and costs by <strong className="text-blue-600">20-40%</strong> through intelligent disaster relief.
             </p>
             <p>
               We combine <strong>real-time data streaming</strong>, <strong>satellite damage assessment</strong>, <strong>geospatial intelligence</strong>, and <strong>multi-LLM reasoning</strong> to deliver actionable insights for disaster response, recovery planning, and long-term resilience building.
@@ -62,7 +62,7 @@ export default function Home() {
           {[
             {
               title: 'ResilienceAI Platform',
-              description: 'Our flagship AI-powered crisis management solution',
+              description: 'Our flagship AI-powered disaster relief solution',
               color: 'from-blue-600 to-purple-600',
               href: '/resilience-ai'
             },

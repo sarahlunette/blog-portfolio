@@ -6,9 +6,9 @@ import Navigation from '@/components/Navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'TheLab - ResilienceAI: AI-Powered Crisis Management Platform',
-  description: 'ResilienceAI by TheLab: AI-powered disaster recovery platform for small islands and fragile states. Reduce recovery time by 30-50%, costs by 20-40%. Satellite damage assessment, geospatial intelligence, multi-LLM reasoning. GDPR compliant.',
-  keywords: ['disaster recovery', 'crisis management', 'AI platform', 'resilience planning', 'satellite imagery', 'geospatial intelligence', 'GDPR compliant', 'small islands', 'coastal territories', 'climate resilience', 'emergency response'],
+  title: 'TheLab - ResilienceAI: AI-Powered disaster relief Platform',
+  description: 'ResilienceAI by TheLab: AI-powered disaster recovery platform for at-risk territories. Reduce recovery time by 30-50%, costs by 20-40%. Satellite damage assessment, geospatial intelligence, multi-LLM reasoning. GDPR compliant.',
+  keywords: ['disaster recovery', 'disaster relief', 'AI platform', 'resilience planning', 'satellite imagery', 'geospatial intelligence', 'GDPR compliant', 'at-risk territories', 'climate resilience', 'emergency response'],
   authors: [{ name: 'Sarah LE NET' }],
   creator: 'TheLab',
   publisher: 'TheLab',
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://thelabaidata.com',
-    title: 'TheLab - ResilienceAI: AI-Powered Crisis Management Platform',
-    description: 'Transform disaster response with ResilienceAI. Reduce recovery time by 30-50% through AI-powered crisis management for small islands and fragile states.',
+    title: 'TheLab - ResilienceAI: AI-Powered disaster relief Platform',
+    description: 'Transform disaster response with ResilienceAI. Reduce recovery time by 30-50% through AI-powered disaster relief for at-risk territories.',
     siteName: 'TheLab',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TheLab - ResilienceAI: AI-Powered Crisis Management Platform',
-    description: 'Transform disaster response with ResilienceAI. Reduce recovery time by 30-50% through AI-powered crisis management.',
+    title: 'TheLab - ResilienceAI: AI-Powered disaster relief Platform',
+    description: 'Transform disaster response with ResilienceAI. Reduce recovery time by 30-50% through AI-powered disaster relief.',
   },
 }
 

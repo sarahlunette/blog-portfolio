@@ -87,7 +87,7 @@ export default function ArticlesPage() {
             Articles
           </h1>
           <p className="text-xl text-gray-600 mb-8 text-center max-w-2xl mx-auto">
-            Explore our collection of articles on crisis management, AI in healthcare, and environmental solutions.
+            Explore our collection of articles on disaster relief, AI in healthcare, and environmental solutions.
           </p>
 
           {/* Language Filter */}

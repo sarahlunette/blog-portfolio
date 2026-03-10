@@ -36,10 +36,10 @@ export default function ResilienceAI() {
               ResilienceAI
             </h1>
             <p className="text-2xl md:text-3xl text-purple-200 mb-8">
-              AI-Powered Crisis Management & Disaster Recovery Platform
+              AI-Powered disaster relief & Disaster Recovery Platform
             </p>
             <p className="text-xl text-gray-200 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Transform disaster response and resilience planning with the world&apos;s first AI platform designed specifically for small islands, coastal territories, and fragile states. Reduce recovery time by <strong>30-50%</strong> and costs by <strong>20-40%</strong>.
+              Transform disaster response and resilience planning with the world&apos;s first AI platform designed specifically for at-risk territories. Reduce recovery time by <strong>30-50%</strong> and costs by <strong>20-40%</strong>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -97,7 +97,7 @@ export default function ResilienceAI() {
               What is ResilienceAI?
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              ResilienceAI is an end-to-end crisis management platform that combines <strong>real-time data streaming</strong>, <strong>satellite damage assessment</strong>, <strong>geospatial intelligence</strong>, and <strong>multi-LLM agentic reasoning</strong> to deliver actionable insights for disaster response, recovery planning, and long-term resilience building.
+              ResilienceAI is an end-to-end disaster relief platform that combines <strong>real-time data streaming</strong>, <strong>satellite damage assessment</strong>, <strong>geospatial intelligence</strong>, and <strong>multi-LLM agentic reasoning</strong> to deliver actionable insights for disaster response, recovery planning, and long-term resilience building.
             </p>
           </motion.div>
 
@@ -339,50 +339,72 @@ export default function ResilienceAI() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {[
               {
-                name: 'SaaS Subscription',
+                name: 'Starter',
                 icon: FaCloudDownloadAlt,
-                description: 'Cloud-based access with automatic updates and managed infrastructure',
+                description: 'Essential disaster response tools for small organizations',
                 features: [
-                  'Monthly or annual billing',
-                  'No infrastructure costs',
-                  'Automatic updates',
-                  'Scalable usage',
-                  'GDPR-compliant EU hosting'
+                  'Satellite damage assessment',
+                  'Climate forecasts',
+                  'OpenStreetMap integration',
+                  'Up to 5 users',
+                  'Email support (48h)',
+                  'Monthly limits apply'
                 ],
-                ideal: 'NGOs, small municipalities, project-based organizations',
-                color: 'blue'
+                ideal: 'Small NGOs, municipalities (<100K population)',
+                color: 'blue',
+                pricing: 'Contact for Pricing'
               },
               {
-                name: 'On-Premise License',
-                icon: FaShieldAlt,
-                description: 'Deploy within your own infrastructure for maximum control and data sovereignty',
+                name: 'Professional',
+                icon: FaRocket,
+                description: 'Advanced capabilities for regional disaster management',
                 features: [
-                  'One-time license fee',
-                  'Full data control',
-                  'Custom integration',
-                  'Offline capability',
-                  'Dedicated support'
+                  'All Starter features',
+                  'Real-time crisis monitoring',
+                  'Navigation & routing tools',
+                  'Up to 20 users',
+                  'Priority support (24h)',
+                  'Increased usage limits'
                 ],
-                ideal: 'Government agencies, defense organizations, large territories',
+                ideal: 'National agencies, regional organizations',
                 color: 'purple',
-                badge: 'Most Popular'
+                pricing: 'Contact for Pricing'
               },
               {
-                name: 'Custom Development',
-                icon: FaUsers,
-                description: 'Tailored solutions with white-label options and custom feature development',
+                name: 'Enterprise',
+                icon: FaShieldAlt,
+                description: 'Complete platform with unlimited access and dedicated support',
                 features: [
-                  'Bespoke features',
-                  'White-label deployment',
-                  'API integration',
-                  'Training & consulting',
-                  'Long-term partnership'
+                  'All Professional features',
+                  'Database management agents',
+                  'Custom development hours',
+                  'Unlimited users',
+                  'SLA guarantee (4h)',
+                  'Dedicated account manager'
                 ],
-                ideal: 'International organizations, multi-territory programs, research institutions',
-                color: 'green'
+                ideal: 'UN agencies, large governments, insurance companies',
+                color: 'indigo',
+                badge: 'Most Popular',
+                pricing: 'Contact for Pricing'
+              },
+              {
+                name: 'Enterprise Plus',
+                icon: FaUsers,
+                description: 'Strategic partnership with full customization and white-labeling',
+                features: [
+                  'All Enterprise features',
+                  'Multi-country deployment',
+                  'API access & integration',
+                  'White-label options',
+                  'Custom training programs',
+                  'White-glove support'
+                ],
+                ideal: 'Multi-country programs, strategic partners',
+                color: 'green',
+                pricing: 'Custom Quote'
               }
             ].map((option, index) => (
               <motion.div
