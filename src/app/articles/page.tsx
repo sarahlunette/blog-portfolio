@@ -13,6 +13,12 @@ const articles = [
     fileName: 'Califrais_(French_Version).html'
   },
   {
+    slug: 'callendar',
+    title: 'Callendar',
+    language: 'French',
+    fileName: 'Callendar_(French_Version).html'
+  },
+  {
     slug: 'chatgpt-hro',
     title: 'ChatGPT HRO',
     language: 'French',
