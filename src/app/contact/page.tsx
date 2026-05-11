@@ -67,7 +67,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-gray-600">
-              Have a question about The Lab AI or The Lab Data? Let's talk!
+              Have a question about The Lab AI or The Lab Data? Let&apos;s talk!
             </p>
           </div>
 
@@ -144,7 +144,7 @@ export default function Contact() {
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="bg-white p-8 rounded-2xl shadow-lg">
@@ -159,7 +159,7 @@ export default function Contact() {
                       <p className="font-semibold">Message sent successfully!</p>
                     </div>
                     <p className="text-sm text-green-600 mt-1">
-                      We'll get back to you as soon as possible.
+                      We&apos;ll get back to you as soon as possible.
                     </p>
                   </div>
                 )}
