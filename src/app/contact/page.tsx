@@ -144,7 +144,7 @@ export default function Contact() {
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="bg-white p-8 rounded-2xl shadow-lg">
