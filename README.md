@@ -1,14 +1,33 @@
-# TheLab Blog Portfolio
+# TheLab - ResilienceAI Platform
 
-A modern, responsive blog portfolio built with Next.js, React, TypeScript, and Tailwind CSS. Features articles on crisis management, AI in healthcare, and environmental solutions.
+The official website for TheLab, showcasing ResilienceAI - an AI-powered disaster relief and disaster recovery platform designed for at-risk territories. Built with Next.js, React, TypeScript, and Tailwind CSS.
 
-## Features
+## About TheLab
 
+TheLab is an AI-powered disaster relief and disaster recovery platform founded in 2024. Our flagship product, **ResilienceAI**, combines:
+
+- Real-time data streaming
+- Satellite damage assessment (Sentinel-2)
+- Geospatial intelligence (OpenStreetMap, Google Earth Engine)
+- Multi-LLM agentic reasoning (Mistral + Claude)
+- Predictive analytics (ECMWF climate forecasts)
+
+**Impact**: 30-50% faster recovery time, 20-40% cost reduction, 100% GDPR compliant.
+
+**Founder**: Sarah LE NET
+
+## Website Features
+
+- **ResilienceAI Product Page**: Comprehensive showcase of our flagship platform
+- **About Page**: Company information, mission, team, and differentiators
+- **Service Pages**: The Lab AI and The Lab Data offerings
+- **Articles/Blog**: disaster relief insights and case studies
+- **Contact Form**: Business inquiries and demo requests
 - **Modern Design**: Clean, professional interface with smooth animations
 - **Responsive**: Fully responsive design that works on all devices
-- **Bilingual Content**: Support for French and English articles
-- **Fast Performance**: Built with Next.js for optimal performance
-- **Easy Deployment**: Configured for seamless deployment on Vercel
+- **SEO Optimized**: Rich metadata for search engine discoverability
+- **Fast Performance**: Built with Next.js 14 for optimal performance
+- **Easy Deployment**: Configured for Vercel, Netlify, or static hosting
 
 ## Tech Stack
 
@@ -58,12 +77,16 @@ yarn dev
 blog-portfolio/
 ├── src/
 │   ├── app/                    # Next.js app router pages
-│   │   ├── articles/           # Articles page and individual article routes
+│   │   ├── resilience-ai/      # ResilienceAI product page (flagship)
+│   │   ├── about/              # About TheLab & team page
+│   │   ├── lab-ai/             # The Lab AI services page
+│   │   ├── lab-data/           # The Lab Data services page
+│   │   ├── articles/           # Articles listing and individual articles
 │   │   │   ├── [slug]/         # Dynamic article pages
-│   │   │   │   └── page.tsx
-│   │   │   └── page.tsx        # Articles listing page
-│   │   ├── layout.tsx          # Root layout
-│   │   ├── page.tsx            # Home page
+│   │   │   └── page.tsx
+│   │   ├── contact/            # Contact form page
+│   │   ├── layout.tsx          # Root layout with SEO metadata
+│   │   ├── page.tsx            # Home page (ResilienceAI focus)
 │   │   └── globals.css         # Global styles
 │   └── components/             # Reusable components
 │       └── Navigation.tsx      # Navigation component
@@ -237,10 +260,36 @@ Make sure:
 - File names match exactly in the article mapping
 - File names follow the naming convention
 
+## Business Model
+
+TheLab offers three deployment options:
+
+1. **SaaS Subscription**: Cloud-based access with automatic updates
+2. **On-Premise License**: Deploy within your own infrastructure (most popular)
+3. **Custom Development**: Tailored solutions with white-label options
+
+Target customers: Governments, NGOs, municipalities, international organizations in at-risk territories.
+
+## Contact
+
+**Founder & CEO**: Sarah LE NET
+**Email**: sarah@thelabaidata.com
+**Website**: https://thelabaidata.com
+
+## Compliance & Legal
+
+- **GDPR Compliant**: European data sovereignty, full auditability
+- **EU AI Act Ready**: Transparency and decision traceability
+- **Founded**: 2024
+- **Headquarters**: European Union
+
 ## License
 
-© 2024 TheLab Blog. All rights reserved.
+© 2024 TheLab. All rights reserved.
 
 ## Support
 
-For issues or questions, please open an issue on GitHub or contact the site administrator.
+For business inquiries, demo requests, or partnership opportunities:
+- Visit our [Contact Page](https://thelabaidata.com/contact)
+- Email: sarah@thelabaidata.com
+- GitHub Issues: For technical issues only

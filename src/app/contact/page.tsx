@@ -127,7 +127,7 @@ export default function Contact() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
-                    Crisis management consulting
+                    disaster relief consulting
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>

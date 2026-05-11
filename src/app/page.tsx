@@ -14,22 +14,39 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
+          <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-semibold text-sm mb-4">
+            AI-Powered disaster relief Platform
+          </div>
           <h1 className="text-6xl font-bold text-gray-900 mb-4">
-            TheLab Blog
+            TheLab
           </h1>
-          <p className="text-2xl text-gray-600 mb-8">
-            Articles on Crisis Management, AI, Healthcare & Environment
+          <p className="text-3xl text-gray-700 mb-8 font-semibold">
+            Transform Disaster Response with ResilienceAI
           </p>
           <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
-            <p>
-              Welcome to TheLab, where we transform disaster recovery and crisis management through AI-powered solutions and data-driven intelligence. We publish insightful articles and provide cutting-edge services in emergency response, disaster resilience, and innovative technology applications.
+            <p className="text-xl">
+              <strong>ResilienceAI</strong> is the world&apos;s first AI platform designed specifically for at-risk territories. Reduce recovery time by <strong className="text-blue-600">30-50%</strong> and costs by <strong className="text-blue-600">20-40%</strong> through intelligent disaster relief.
             </p>
             <p>
-              Our mission is to bridge the critical gap between emergency response and sustainable reconstruction, empowering entrepreneurs, governments, and organizations with the tools to make better decisions faster in high-stakes environments.
+              We combine <strong>real-time data streaming</strong>, <strong>satellite damage assessment</strong>, <strong>geospatial intelligence</strong>, and <strong>multi-LLM reasoning</strong> to deliver actionable insights for disaster response, recovery planning, and long-term resilience building.
             </p>
             <p>
-              Through <strong>The Lab AI</strong> and <strong>The Lab Data</strong>, we offer comprehensive solutions combining artificial intelligence, multi-source data integration, and geospatial analytics to address some of the world&apos;s most pressing challenges in disaster resilience and crisis management.
+              Through <strong>The Lab AI</strong> and <strong>The Lab Data</strong>, we empower governments, NGOs, and organizations to make better decisions faster in high-stakes environments—100% GDPR compliant with European data sovereignty.
             </p>
+          </div>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/resilience-ai"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-bold text-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg transform hover:-translate-y-1"
+            >
+              Explore ResilienceAI
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-block px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all"
+            >
+              Request a Demo
+            </Link>
           </div>
         </motion.div>
       </section>
@@ -44,6 +61,18 @@ export default function Home() {
         >
           {[
             {
+              title: 'ResilienceAI Platform',
+              description: 'Our flagship AI-powered disaster relief solution',
+              color: 'from-blue-600 to-purple-600',
+              href: '/resilience-ai'
+            },
+            {
+              title: 'About TheLab',
+              description: 'Our mission, team, and vision for resilient communities',
+              color: 'from-indigo-500 to-indigo-600',
+              href: '/about'
+            },
+            {
               title: 'The Lab AI',
               description: 'AI-powered solutions for entrepreneurs',
               color: 'from-purple-500 to-purple-600',
@@ -52,29 +81,20 @@ export default function Home() {
             {
               title: 'The Lab Data',
               description: 'Data integration & analytics services',
-              color: 'from-blue-500 to-blue-600',
+              color: 'from-teal-500 to-teal-600',
               href: '/lab-data'
             },
             {
-              title: 'Crisis Management',
-              description: 'Emergency response & disaster preparedness',
-              color: 'from-red-500 to-red-600'
-            },
-            {
-              title: 'Healthcare AI',
-              description: 'Innovation in medical technology',
-              color: 'from-teal-500 to-teal-600'
-            },
-            {
-              title: 'Environment',
-              description: 'Sustainability & climate action',
-              color: 'from-green-500 to-green-600'
-            },
-            {
               title: 'Browse Articles',
-              description: 'Read our latest insights',
+              description: 'Read our latest insights & case studies',
               color: 'from-orange-500 to-orange-600',
               href: '/articles'
+            },
+            {
+              title: 'Get in Touch',
+              description: 'Request a demo or partnership inquiry',
+              color: 'from-green-500 to-green-600',
+              href: '/contact'
             },
           ].map((item, index) => (
             <motion.div
